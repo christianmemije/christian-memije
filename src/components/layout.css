@@ -1,5 +1,8 @@
+
 html {
   color: #212121;
+  font-family: monospace;
+  font-size: 18px;
 }
 
 a {
@@ -9,5 +12,5 @@ a {
 .container {
     margin: 0 auto;
     padding: 2em;
-    max-width: 960px;
+    max-width: 1000px;
 }

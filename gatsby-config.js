@@ -1,17 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: 'Christian Memije',
+    title: `Christian Memije`,
+    description: `Christian Memije`,
+    author: `Christian Memije`,
   },
-  plugins: ['gatsby-plugin-react-helmet',
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        pathToConfigModule: `src/layouts/typography`,
-        omitGoogleFont: true,
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        display: `minimal-ui`,
       },
     },
-    {
-      resolve: "gatsby-plugin-no-sourcemaps",
-    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.app/offline
+    // 'gatsby-plugin-offline',
   ],
-};
+}
