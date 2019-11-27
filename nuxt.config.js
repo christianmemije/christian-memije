@@ -9,9 +9,20 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
+        name: 'short_name',
+        content: process.env.npm_package_description
+      },
+      {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      }
+    ],
+    link: [
+      {
+        rel: 'shortcut icon',
+        href: 'data:image/x-icon;,',
+        type: 'image/x-icon'
       }
     ]
   },
@@ -22,7 +33,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['normalize.css', '@/assets/styles/main.scss'],
+  css: ['normalize.css', '@/assets/styles/global.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -46,5 +57,8 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  generate: {
+    dir: 'public'
   }
 }

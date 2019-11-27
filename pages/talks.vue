@@ -3,16 +3,20 @@
     <h1>Talks</h1>
     <ul>
       <li v-for="talk in talks" :key="talk.title">
-        <a :href="talk.href" target="_blank"
-          >{{ talk.title }} - {{ date(talk.date) }}</a
-        >
+        <ExternalLink :href="talk.href" :text="`${talk.title}`" /> -
+        {{ date(talk.date) }} @ {{ talk.location }}
       </li>
     </ul>
   </section>
 </template>
 
 <script>
+import ExternalLink from '~/components/ExternalLink'
+
 export default {
+  components: {
+    ExternalLink
+  },
   data() {
     return {
       talks: [

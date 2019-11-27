@@ -1,49 +1,61 @@
 <template>
-  <section class="container">
-    <img src="~assets/images/christian_memije.jpg" />
+  <section>
+    <img
+      src="~assets/images/christian_memije.jpg"
+      alt="Profile picture of Christian Memije"
+    />
     <p>
-      A UI engineer who enjoys designing and implementing great user
-      experiences. Passionate about using software to help make a positive
-      impact in the world.
+      I am a UI engineer who enjoys designing and implementing great user
+      experiences. I am driven to use my skills as a software engineer to make a
+      positive impact in the world. I enjoy high-paced and collaborative work.
     </p>
 
     <p>
       I currently work at
-      <a :href="TERDATA_LINK" target="_blank">Teradata</a> as a UI Engineer. I
-      help develop <a :href="COVALENT_LINK" target="_blank">Covalent</a>, an
+      <ExternalLink :href="TERDATA_LINK" text="Teradata" /> as a UI Engineer. I
+      help develop <ExternalLink :href="COVALENT_LINK" text="Covalent" />, an
       open source Angular UI component library.
-      <a :href="COVALENT_PRS_LINK" target="_blank">View contributions.</a>
+      <ExternalLink :href="COVALENT_PRS_LINK" text="View contributions" />.
     </p>
     <p>
       I previously worked at
-      <a :href="LEARNING_EQUALITY_LINK" target="_blank">Learning Equality</a>
+      <ExternalLink :href="LEARNING_EQUALITY_LINK" text="Learning Equality" />
       as a UX Developer helping design and develop
-      <a :href="KOLIBRI_LINK" target="_blank">Kolibri</a>, an open source
+      <ExternalLink :href="KOLIBRI_LINK" text="Kolibri" />, an open source
       offline educational app.
-      <a :href="KOLIBRI_PRS_LINK" target="_blank">View contributions</a>.
-      <a :href="KOLIBRI_DEMO_LINK" target="_blank">View demo of Kolibri</a>.
+      <ExternalLink :href="KOLIBRI_PRS_LINK" text="View contributions" />.
+      <ExternalLink :href="KOLIBRI_DEMO_LINK" text="View demo of Kolibri" />.
     </p>
+    <h2>Things I like:</h2>
     <ul>
-      <li></li>
-      <li></li>
+      <li>Close collaboration with developers and designers</li>
+      <li>High-paced work</li>
+      <li>Tight deadlines</li>
+      <li>Clean and consistent code</li>
+      <li>Linters and formatters</li>
+      <li>TypeScript</li>
+      <li>Accessibility</li>
+      <li>Really well done code reviews</li>
+      <li>Questioning designs, not simply blindly implementing mocks</li>
+      <li>Open source software</li>
     </ul>
+    <h2>Other things I like</h2>
     <ul>
-      <li><a :href="RESUME_LINK" target="_blank">Resume</a>.</li>
-      <li>
-        View my open source contributions on
-        <a :href="GITHUB_PROFILE_LINK" target="_blank">Github</a>.
-      </li>
-      <li>
-        Connect with me on
-        <a :href="LINKEDIN_LINK" target="_blank">LinkedIn</a>.
-      </li>
+      <li>Music 🎧</li>
+      <li>Staying active via exercise and hiking 🏃‍♂️⛰️</li>
+      <li>Enjoying nature 🏕️</li>
+      <li>Traveling 🛫</li>
     </ul>
   </section>
 </template>
 
 <script>
+import ExternalLink from '~/components/ExternalLink'
+
 export default {
-  components: {},
+  components: {
+    ExternalLink
+  },
   data() {
     return {
       TERDATA_LINK: 'https://teradata.com',
@@ -54,24 +66,13 @@ export default {
       KOLIBRI_LINK: 'https://learningequality.org/kolibri/',
       KOLIBRI_PRS_LINK:
         'https://github.com/learningequality/kolibri/pulls?q=is%3Apr+author%3Achristianmemije',
-      KOLIBRI_DEMO_LINK: 'http://kolibribeta.learningequality.org/learn',
-      KOLIBRI_STYLE_GUIDE_LINK:
-        'http://kolibribeta.learningequality.org/style_guide',
-      RESUME_LINK:
-        'https://drive.google.com/open?id=0Bzmbrj8wLiAaNTZGUHg4RVdLU2s',
-      GITHUB_PROFILE_LINK: 'https://github.com/christianmemije',
-      LINKEDIN_LINK: 'https://www.linkedin.com/in/christianmemije'
+      KOLIBRI_DEMO_LINK: 'http://kolibribeta.learningequality.org/learn'
     }
   }
 }
 </script>
 
 <style scoped>
-.container {
-  /* display: flex;
-  align-items: center; */
-}
-
 img {
   width: 10rem;
   max-width: 100%;
