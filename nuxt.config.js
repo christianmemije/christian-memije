@@ -4,18 +4,40 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Christian Memije',
+    title: 'Christian Memije | UI Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'short_name',
-        content: process.env.npm_package_description
+        content: 'Christian Memije'
+      },
+      {
+        name: 'og:site_name',
+        content: 'Christian Memije',
+        property: 'Christian Memije'
+      },
+      {
+        name: 'og:title',
+        content: 'Christian Memije',
+        property: 'Christian Memije'
+      },
+      {
+        name: 'apple-mobile-web-app-title',
+        content: 'Christian Memije'
       },
       {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      {
+        name: 'google-site-verification',
+        content: 'AM6spxbPqj0n-I0_zZ44Ash9LFvweLrZwDC22wFgrVc'
+      },
+      {
+        name: 'yandex-verification',
+        content: 'be7838603ea7faf6'
       }
     ],
     link: [
