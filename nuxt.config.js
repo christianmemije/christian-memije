@@ -45,6 +45,11 @@ export default {
         rel: 'shortcut icon',
         href: 'data:image/x-icon;,',
         type: 'image/x-icon'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500&display=swap'
       }
     ]
   },

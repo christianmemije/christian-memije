@@ -30,6 +30,10 @@ export default {
           href: '/'
         },
         {
+          text: 'Projects',
+          href: '/projects'
+        },
+        {
           text: 'Articles',
           href: '/articles'
         },

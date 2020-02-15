@@ -25,14 +25,14 @@ export default {
           href:
             'https://docs.google.com/presentation/d/1X54DZVIp-ssmdLjstXU9keAOz-O7OjAHpOfv8lWfaO0/edit?usp=sharing',
           location: 'San Diego Angular Meetup',
-          date: '08-21-2019'
+          date: '2019-08-21'
         },
         {
           title: 'NG E2E testing: Ditching Protractor for Cypress?',
           href:
             'https://docs.google.com/presentation/d/1cNCzi2Qp5u4cFQ2TjqjmQgSW8ZFeI8zUdLO4JZuZ0Ys/edit?usp=sharing',
           location: 'San Diego Angular Meetup',
-          date: '04-10-2019'
+          date: '2019-04-10'
         }
       ]
     }
