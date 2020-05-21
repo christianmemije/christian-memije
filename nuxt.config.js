@@ -83,6 +83,13 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    loaders: {
+      vue: {
+        compilerOptions: {
+          preserveWhitespace: false
+        }
+      }
+    },
     extend(config, ctx) {}
   },
   generate: {

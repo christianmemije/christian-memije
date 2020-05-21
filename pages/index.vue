@@ -12,7 +12,8 @@
       <ExternalLink :href="TERDATA_LINK" text="Teradata" /> as a UI Engineer. I
       help develop <ExternalLink :href="COVALENT_LINK" text="Covalent" />,
       <ExternalLink :href="UI_PLATFORM_LINK" text="Vantage UI Platform" />, and
-      a variety of Vantage applications.
+      a variety of
+      <ExternalLink :href="VANTAGE_LINK" text="Vantage" /> applications.
       <ExternalLink
         :href="TERADATA_PRS_LINK"
         text="View open source contributions"
@@ -65,6 +66,7 @@ export default {
       UI_PLATFORM_LINK: 'https://github.com/Teradata/vantage-ui-platform',
       TERADATA_PRS_LINK:
         'https://github.com/pulls?q=is%3Apr+author%3Achristianmemije+user%3ATeradata',
+      VANTAGE_LINK: 'https://www.teradata.com/Products/Software/Vantage',
       LEARNING_EQUALITY_LINK: 'https://learningequality.org',
       KOLIBRI_LINK: 'https://learningequality.org/kolibri/',
       LEARNING_EQUALITY_PRS_LINK:
