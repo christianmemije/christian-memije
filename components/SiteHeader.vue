@@ -76,7 +76,7 @@ nav {
     padding-right: 1.25rem;
   }
   li {
-    display: inline;
+    display: inline-block;
   }
 }
 </style>
