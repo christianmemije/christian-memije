@@ -27,7 +27,7 @@
       offline educational app.
       <ExternalLink
         :href="LEARNING_EQUALITY_PRS_LINK"
-        text="View contributions"
+        text="View open source contributions"
       />.
       <ExternalLink :href="KOLIBRI_DEMO_LINK" text="View demo of Kolibri" />.
     </p>
