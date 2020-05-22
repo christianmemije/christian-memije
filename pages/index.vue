@@ -65,12 +65,12 @@ export default {
       COVALENT_LINK: 'https://github.com/teradata/covalent',
       UI_PLATFORM_LINK: 'https://github.com/Teradata/vantage-ui-platform',
       TERADATA_PRS_LINK:
-        'https://github.com/pulls?q=is%3Apr+author%3Achristianmemije+user%3ATeradata',
+        'https://github.com/search?o=desc&q=org%3ATeradata+author%3Achristianmemije&s=created&type=Issues',
       VANTAGE_LINK: 'https://www.teradata.com/Products/Software/Vantage',
       LEARNING_EQUALITY_LINK: 'https://learningequality.org',
       KOLIBRI_LINK: 'https://learningequality.org/kolibri/',
       LEARNING_EQUALITY_PRS_LINK:
-        'https://github.com/pulls?q=is%3Apr+author%3Achristianmemije+user%3Alearningequality',
+        'https://github.com/search?o=desc&q=org%3Alearningequality+author%3Achristianmemije&s=created&type=Issues',
       KOLIBRI_DEMO_LINK: 'http://kolibribeta.learningequality.org/learn'
     }
   }
