@@ -63,12 +63,12 @@ export default {
 
 <style scoped lang="scss">
 .title {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #212121;
   text-decoration: none;
 }
 nav {
-  font-size: 0.9rem;
+  font-size: 1rem;
   ul {
     padding: 0;
   }

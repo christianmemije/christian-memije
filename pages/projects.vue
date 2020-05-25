@@ -5,6 +5,7 @@
       <li v-for="project in projects" :key="project.name">
         {{ project.name }} - {{ project.description }}
         <ExternalLink :href="project.demoHref" :text="'Demo'" />
+        {{ ' ' }}
         <ExternalLink :href="project.codeHref" :text="'Source'" />
       </li>
     </ul>
