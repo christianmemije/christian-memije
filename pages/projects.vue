@@ -25,7 +25,7 @@ export default {
         {
           name: 'Sortify',
           description: 'Sort Spotify Playlists',
-          demoHref: 'https://sortify-app.now.sh/',
+          demoHref: 'https://sortspotifyplaylists.com/',
           codeHref: 'https://github.com/christianmemije/sortify'
         }
       ]
