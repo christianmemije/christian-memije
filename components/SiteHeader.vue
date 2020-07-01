@@ -71,6 +71,7 @@ nav {
   font-size: 1rem;
   ul {
     padding: 0;
+    margin: 0.5rem 0;
   }
   li:not(:last-child) {
     padding-right: 1.25rem;
