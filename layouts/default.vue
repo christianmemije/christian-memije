@@ -1,32 +1,33 @@
 <template>
   <div class="layout">
-    <SiteHeader />
+    <HeaderSection />
     <main>
       <nuxt />
     </main>
-    <SiteFooter />
+    <FooterSection />
   </div>
 </template>
 
-<script>
-import SiteHeader from '~/components/SiteHeader'
-import SiteFooter from '~/components/SiteFooter'
+<script lang="ts">
+import HeaderSection from '~/components/HeaderSection.vue'
+import FooterSection from '~/components/FooterSection.vue'
 
 export default {
   components: {
-    SiteHeader,
-    SiteFooter
+    HeaderSection,
+    FooterSection
   },
   data() {
     return {}
-  }
+  },
+  mounted() {}
 }
 </script>
 
 <style scoped lang="scss">
 .layout {
   margin: 0 auto;
-  max-width: 50rem;
+  max-width: 840px;
   padding: 1.5rem;
 }
 </style>

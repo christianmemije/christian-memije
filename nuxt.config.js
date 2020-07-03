@@ -49,7 +49,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500&display=swap'
+          'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap'
       }
     ]
   },
@@ -70,7 +70,7 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxt/typescript-build'
   ],
   /*
    ** Nuxt.js modules
@@ -90,7 +90,7 @@ export default {
         }
       }
     },
-    extend(config, ctx) {}
+    extend() {}
   },
   generate: {
     dir: 'dist'

@@ -2,7 +2,7 @@
   <a :href="href" target="_blank" rel="noreferrer">{{ text }}</a>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     href: {

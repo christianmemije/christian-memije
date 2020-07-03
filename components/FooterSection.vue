@@ -1,6 +1,5 @@
 <template>
   <footer>
-    <hr />
     <p>
       Built using
       <ExternalLink href="https://nuxtjs.org/" text="Nuxt.js" />,
@@ -20,8 +19,9 @@
   </footer>
 </template>
 
-<script>
-import ExternalLink from '~/components/ExternalLink'
+<script lang="ts">
+import ExternalLink from '~/components/ExternalLink.vue'
+
 export default {
   components: {
     ExternalLink
