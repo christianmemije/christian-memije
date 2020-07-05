@@ -4,6 +4,10 @@
       Built using
       <ExternalLink href="https://nuxtjs.org/" text="Nuxt.js" />,
       <ExternalLink
+        href="https://github.com/matteobruni/tsparticles"
+        text="tsParticles"
+      />,
+      <ExternalLink
         href="https://fonts.google.com/specimen/IBM+Plex+Mono"
         text="IBM Plex Mono"
       />, and
