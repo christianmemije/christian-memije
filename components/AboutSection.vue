@@ -1,7 +1,7 @@
 <template>
   <section id="about">
     <h2>About</h2>
-    <img src="~assets/images/christian_memije.jpg" alt="Christian Memije" />
+    <img src="/christian_memije.jpg" alt="Christian Memije" />
     <p>{{ about }}</p>
   </section>
 </template>

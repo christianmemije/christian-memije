@@ -1,35 +1,62 @@
+// @ts-check
+const shortDescription = 'UI Engineer'
+const longDescription =
+  'Christian Memije, a UI Engineer interested in music, ML, and space.'
+const name = 'Christian Memije'
+
 export default {
   mode: 'spa',
   /*
    ** Headers of the page
    */
   head: {
-    title: 'Christian Memije | UI Engineer',
+    title: `${name} | ${shortDescription}`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'short_name',
-        content: 'Christian Memije'
+        content: name
       },
       {
-        name: 'og:site_name',
-        content: 'Christian Memije',
-        property: 'Christian Memije'
-      },
-      {
-        name: 'og:title',
-        content: 'Christian Memije',
-        property: 'Christian Memije'
+        name: 'description',
+        content: longDescription
       },
       {
         name: 'apple-mobile-web-app-title',
-        content: 'Christian Memije'
+        content: name
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
+        property: 'og:title',
+        content: name
+      },
+      {
+        property: 'og:site_name',
+        content: name
+      },
+      {
+        property: 'og:description',
+        content: longDescription
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        property: 'og:url',
+        content: 'https://christianmemije.com'
+      },
+      {
+        property: 'og:image',
+        content: 'https://christianmemije.com/christian_memije.jpg'
+      },
+      {
+        property: 'og:image:alt',
+        content: name
+      },
+      {
+        property: 'og:image:type',
+        content: 'image/jpeg'
       },
       {
         name: 'google-site-verification',
@@ -45,11 +72,19 @@ export default {
         rel: 'shortcut icon',
         href: 'data:image/x-icon;,',
         type: 'image/x-icon'
-      },
+      }
+    ],
+    scripts: [
       {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap'
+        type: 'application/ld+json',
+        json: {
+          '@context': 'http://www.schema.org',
+          '@type': 'person',
+          name,
+          jobTitle: shortDescription,
+          url: 'https://christianmemije.com',
+          image: 'https://christianmemije.com/christian_memije.jpg'
+        }
       }
     ]
   },
@@ -75,7 +110,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/markdownit'],
+  modules: ['@nuxtjs/pwa'],
   /*
    ** Build configuration
    */
@@ -84,6 +119,7 @@ export default {
      ** You can extend webpack config here
      */
     loaders: {
+      fontUrl: { limit: 100000 },
       vue: {
         compilerOptions: {
           preserveWhitespace: false

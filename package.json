@@ -1,7 +1,7 @@
 {
   "name": "christian-memije",
   "version": "1.0.0",
-  "description": "I am a UI engineer who enjoys designing and implementing great user experiences. I am driven to use my skills as a software engineer to make a positive impact in the world.",
+  "description": "Christian Memije",
   "author": "Christian Memije",
   "private": true,
   "scripts": {
@@ -10,8 +10,9 @@
     "build:original": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "npm run prettier && ./node_modules/.bin/eslint --ext .ts,.js,.vue --ignore-path .gitignore . --fix",
-    "prettier": "./node_modules/.bin/prettier --write './**/*.{vue,js,ts,json,css,scss,html,md}'"
+    "lint": "npm run prettier:check && ./node_modules/.bin/eslint --ext .ts,.js,.vue --ignore-path .gitignore . --fix",
+    "prettier": "./node_modules/.bin/prettier --write './**/*.{vue,js,ts,json,css,scss,html,md}'",
+    "prettier:check": "./node_modules/.bin/prettier --check './**/*.{vue,js,ts,json,css,scss,html,md}'"
   },
   "husky": {
     "hooks": {
@@ -20,6 +21,7 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
+    "fontsource-ibm-plex-mono": "^2.1.4",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.0.0",
     "tsparticles": "^1.16.2"
@@ -29,7 +31,6 @@
     "@nuxt/typescript-build": "^1.0.3",
     "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
-    "@nuxtjs/markdownit": "^1.2.7",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-nuxt": ">=0.4.2",
