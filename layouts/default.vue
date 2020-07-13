@@ -12,82 +12,54 @@
 </template>
 
 <script lang="ts">
-import { tsParticles } from 'tsparticles'
-import HeaderSection from '~/components/HeaderSection.vue'
-import FooterSection from '~/components/FooterSection.vue'
+import { tsParticles, OutMode } from 'tsparticles';
+import { RecursivePartial } from 'tsparticles/dist/Types/RecursivePartial';
+import { IOptions } from 'tsparticles/dist/Options/Interfaces/IOptions';
+import { Container } from 'tsparticles/dist/Core/Container';
+import HeaderSection from '~/components/HeaderSection.vue';
+import FooterSection from '~/components/FooterSection.vue';
 
-export const PARTICLE_CONFIG: any = {
+export const PARTICLE_CONFIG: RecursivePartial<IOptions> = {
   particles: {
-    number: {
-      value: 100,
-      density: {
-        enable: true,
-        value_area: 800
-      }
-    },
     color: {
-      value: '#424242'
-    },
-    shape: {
-      type: 'circle',
-      stroke: {
-        width: 0,
-        color: '#000000'
-      },
-      polygon: {
-        nb_sides: 5
-      }
+      value: '#ffffff'
     },
     opacity: {
-      value: 1,
-      random: false,
-      anim: {
-        enable: true
-      }
+      value: 0.1
     },
     size: {
-      value: 3,
-      random: true,
-      anim: {
-        enable: true
-      }
+      value: 1
     },
-    line_linked: {
+    links: {
+      color: '#ffffff',
       enable: true,
-      distance: 150,
-      color: '#424242',
-      opacity: 1,
+      opacity: 0.1,
       width: 1
     },
     move: {
       enable: true,
-      speed: 1,
-      direction: 'none',
-      random: false,
-      straight: false,
-      out_mode: 'out',
-      bounce: false,
-      attract: {
-        enable: false,
-        rotateX: 600,
-        rotateY: 1200
+      speed: 0.5,
+      outMode: OutMode.bounce
+    },
+    collisions: {
+      enable: true
+    },
+    number: {
+      density: {
+        enable: true,
+        value_area: 3
+      },
+      value: 1
+    },
+    shape: {
+      polygon: {
+        sides: 4
       }
     }
   },
-  interactivity: {
-    detect_on: 'canvas',
-    events: {
-      onhover: {
-        enable: false
-      },
-      onclick: {
-        enable: false
-      },
-      resize: true
-    }
-  },
-  retina_detect: true
-}
+  fpsLimit: 60,
+  detectRetina: true
+};
 
 export default {
   components: {
@@ -95,12 +67,16 @@ export default {
     FooterSection
   },
   data() {
-    return {}
+    return {};
   },
-  mounted() {
-    tsParticles.load('particles-js', PARTICLE_CONFIG)
+  async mounted() {
+    const particles: Container = (await tsParticles.load(
+      'particles-js',
+      PARTICLE_CONFIG
+    )) as Container;
+    window.addEventListener('resize', () => particles.refresh());
   }
-}
+};
 </script>
 
 <style scoped lang="scss">

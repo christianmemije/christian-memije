@@ -11,13 +11,13 @@
 </template>
 
 <script lang="ts">
-import ExternalLink from '~/components/ExternalLink.vue'
+import ExternalLink from '~/components/ExternalLink.vue';
 
 interface ITalk {
-  title: string
-  href: string
-  location: string
-  date: string
+  title: string;
+  href: string;
+  location: string;
+  date: string;
 }
 
 const talks: ITalk[] = [
@@ -35,7 +35,7 @@ const talks: ITalk[] = [
     location: 'San Diego Angular Meetup',
     date: '2019-04-10'
   }
-]
+];
 
 export default {
   components: {
@@ -44,12 +44,12 @@ export default {
   data() {
     return {
       talks
-    }
+    };
   },
   methods: {
     date(date: string) {
-      return new Date(date).toLocaleDateString()
+      return new Date(date).toLocaleDateString();
     }
   }
-}
+};
 </script>

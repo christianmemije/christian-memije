@@ -11,12 +11,12 @@
 </template>
 
 <script lang="ts">
-import ExternalLink from '~/components/ExternalLink.vue'
+import ExternalLink from '~/components/ExternalLink.vue';
 
 interface IArticle {
-  text: string
-  href: string
-  date: string
+  text: string;
+  href: string;
+  date: string;
 }
 
 const articles: IArticle[] = [
@@ -38,7 +38,7 @@ const articles: IArticle[] = [
       'https://blog.learningequality.org/kolibri-0-10-exercise-mastery-d7213efd6f58',
     date: '2018-07-02'
   }
-]
+];
 
 export default {
   components: {
@@ -47,12 +47,12 @@ export default {
   data() {
     return {
       articles
-    }
+    };
   },
   methods: {
     date(date: string) {
-      return new Date(date).toLocaleDateString()
+      return new Date(date).toLocaleDateString();
     }
   }
-}
+};
 </script>

@@ -16,11 +16,11 @@
 </template>
 
 <script lang="ts">
-import ExternalLink from '~/components/ExternalLink.vue'
+import ExternalLink from '~/components/ExternalLink.vue';
 
 interface ILink {
-  text: string
-  href: string
+  text: string;
+  href: string;
 }
 
 const anchorLinks: ILink[] = [
@@ -48,7 +48,7 @@ const anchorLinks: ILink[] = [
     text: 'About',
     href: '#about'
   }
-]
+];
 
 const externalLinks: ILink[] = [
   {
@@ -63,7 +63,7 @@ const externalLinks: ILink[] = [
     text: 'LinkedIn',
     href: 'https://www.linkedin.com/in/christianmemije'
   }
-]
+];
 
 export default {
   components: {
@@ -73,9 +73,9 @@ export default {
     return {
       anchorLinks,
       externalLinks
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped lang="scss">

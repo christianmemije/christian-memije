@@ -24,21 +24,21 @@
 </template>
 
 <script lang="ts">
-import ExternalLink from '~/components/ExternalLink.vue'
+import ExternalLink from '~/components/ExternalLink.vue';
 
-const tcsbVideo = require('../assets/videos/tcsb.mp4')
-const sortifyVideo = require('../assets/videos/sortify.mp4')
+const tcsbVideo = require('../assets/videos/tcsb.mp4');
+const sortifyVideo = require('../assets/videos/sortify.mp4');
 
 interface IBulletSubStr {
-  text: string
-  url?: string
+  text: string;
+  url?: string;
 }
 
 interface IProject {
-  name: string
-  description: string[]
-  links: IBulletSubStr[]
-  video: any
+  name: string;
+  description: string[];
+  links: IBulletSubStr[];
+  video: any;
 }
 
 const projects: IProject[] = [
@@ -81,7 +81,7 @@ const projects: IProject[] = [
     ],
     video: sortifyVideo
   }
-]
+];
 
 export default {
   components: {
@@ -90,9 +90,9 @@ export default {
   data() {
     return {
       projects
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped>

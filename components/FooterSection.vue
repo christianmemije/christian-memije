@@ -24,16 +24,16 @@
 </template>
 
 <script lang="ts">
-import ExternalLink from '~/components/ExternalLink.vue'
+import ExternalLink from '~/components/ExternalLink.vue';
 
 export default {
   components: {
     ExternalLink
   },
   data() {
-    return {}
+    return {};
   }
-}
+};
 </script>
 
 <style scoped lang="scss">

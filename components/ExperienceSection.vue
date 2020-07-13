@@ -31,23 +31,23 @@
 </template>
 
 <script lang="ts">
-import ExternalLink from '~/components/ExternalLink.vue'
+import ExternalLink from '~/components/ExternalLink.vue';
 
 interface ICompany {
-  name: string
-  url: string
+  name: string;
+  url: string;
 }
 
 interface IExperience {
-  company: ICompany
-  dates: string
-  title: string
-  description: IBulletSubStr[][]
+  company: ICompany;
+  dates: string;
+  title: string;
+  description: IBulletSubStr[][];
 }
 
 interface IBulletSubStr {
-  text: string
-  url?: string
+  text: string;
+  url?: string;
 }
 
 const experiences: IExperience[] = [
@@ -128,7 +128,7 @@ const experiences: IExperience[] = [
       [{ text: 'Performed on-site UX research at various deployments.' }]
     ]
   }
-]
+];
 
 export default {
   components: {
@@ -137,9 +137,9 @@ export default {
   data() {
     return {
       experiences
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped lang="scss">

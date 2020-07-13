@@ -1,8 +1,8 @@
 // @ts-check
-const shortDescription = 'UI Engineer'
+const shortDescription = 'UI Engineer';
 const longDescription =
-  'Christian Memije, a UI Engineer interested in music, ML, and space.'
-const name = 'Christian Memije'
+  'Christian Memije, a UI Engineer interested in music, ML, and space.';
+const name = 'Christian Memije';
 
 export default {
   mode: 'spa',
@@ -131,4 +131,4 @@ export default {
   generate: {
     dir: 'dist'
   }
-}
+};
