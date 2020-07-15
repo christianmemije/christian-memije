@@ -114,7 +114,7 @@ video {
   width: 100%;
 }
 
-@media (min-width: 840px) {
+@media (min-width: 960px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

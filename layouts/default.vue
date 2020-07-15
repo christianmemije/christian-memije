@@ -22,16 +22,16 @@ import FooterSection from '~/components/FooterSection.vue';
 export const PARTICLE_CONFIG: RecursivePartial<IOptions> = {
   particles: {
     color: {
-      value: '#ffffff'
+      value: '#000000'
     },
     opacity: {
       value: 0.1
     },
     size: {
-      value: 1
+      value: 2
     },
     links: {
-      color: '#ffffff',
+      color: '#000000',
       enable: true,
       opacity: 0.1,
       width: 1
@@ -82,7 +82,7 @@ export default {
 <style scoped lang="scss">
 .layout {
   margin: 0 auto;
-  max-width: 840px;
+  max-width: 960px;
   padding: 1.5rem;
 }
 #particles-js {
@@ -92,6 +92,6 @@ export default {
   left: 0;
   bottom: 0;
   z-index: -1;
-  background-color: #141414;
+  background-color: white;
 }
 </style>

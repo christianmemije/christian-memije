@@ -80,7 +80,7 @@ export default {
 
 <style scoped lang="scss">
 .title {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 nav {
