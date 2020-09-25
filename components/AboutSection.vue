@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       about:
-        'I am a software engineer who enjoys designing and implementing great user experiences. For the moment, I happen to work mainly on the front-end. I enjoy high-paced and collaborative work and appreciate clean code, accessibility, and open source software. Other big interests of mine are music, ML, and space. But most importantly, I love to learn.'
+        'I am a software engineer who enjoys designing and implementing great user experiences. For the moment, I happen to work mainly on the front-end. I enjoy high-paced and collaborative work and appreciate clean code, accessibility, and open source software. Other big interests of mine are music, AI, and space. But most importantly, I love to learn.'
     };
   }
 };

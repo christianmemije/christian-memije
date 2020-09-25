@@ -21,6 +21,12 @@ interface IArticle {
 
 const articles: IArticle[] = [
   {
+    text:
+      'Optimizing Your Job Search - Job filtering tips for LinkedIn, Who is Hiring?, and Hacker News',
+    href: 'https://dev.to/christianmemije/optimizing-your-job-search-fpm',
+    date: '2020-09-01'
+  },
+  {
     text: 'Adding Cypress to an Angular project',
     href:
       'https://dev.to/christianmemije/adding-cypress-to-an-angular-project-30je',

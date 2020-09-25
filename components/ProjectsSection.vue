@@ -47,8 +47,7 @@ const projects: IProject[] = [
     description: [
       'Created a soundboard app that allows users to play and share catchphrases that are popular among the music genres of Latin Trap and Corridos',
       'Leveraged React Native and Expo during development to create an Android app, an iOS app, and a PWA from the same code base.',
-      'Created an app to facilitate scraping using Vue.js, Python, and Flask.',
-      'Deployed the app to the Google Play store and currently in the process of deploying it to the Apple App Store.'
+      'Created an app to facilitate scraping using Vue.js, Python, and Flask.'
     ],
     links: [
       {

@@ -1,7 +1,7 @@
 // @ts-check
-const shortDescription = 'UI Engineer';
+const shortDescription = 'Frontend Engineer';
 const longDescription =
-  'Christian Memije, a UI Engineer interested in music, ML, and space.';
+  'Christian Memije, a Frontend Engineer interested in music, AI, and space.';
 const name = 'Christian Memije';
 
 export default {
@@ -72,19 +72,6 @@ export default {
         rel: 'shortcut icon',
         href: 'data:image/x-icon;,',
         type: 'image/x-icon'
-      }
-    ],
-    scripts: [
-      {
-        type: 'application/ld+json',
-        json: {
-          '@context': 'http://www.schema.org',
-          '@type': 'person',
-          name,
-          jobTitle: shortDescription,
-          url: 'https://christianmemije.com',
-          image: 'https://christianmemije.com/christian_memije.jpg'
-        }
       }
     ]
   },

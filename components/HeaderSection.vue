@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1><nuxt-link class="title" to="/">Christian Memije</nuxt-link></h1>
-    <p>UI Engineer interested in music, ML, and space.</p>
+    <p>Frontend Engineer interested in music, AI, and space.</p>
     <nav>
       <ul>
         <li v-for="link in anchorLinks" :key="link.text">
