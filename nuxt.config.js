@@ -82,7 +82,10 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['normalize.css', '@/assets/styles/global.scss'],
+  css: [
+    'bootstrap/dist/css/bootstrap-reboot.css',
+    '@/assets/styles/global.scss'
+  ],
   /*
    ** Plugins to load before mounting the App
    */

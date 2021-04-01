@@ -1,12 +1,28 @@
-@import './typebase';
-@import 'fontsource-ibm-plex-mono/latin-400-normal.css';
+@import 'fontsource-jetbrains-mono/latin-400.css';
+@import 'fontsource-jetbrains-mono/latin-700.css';
+
+$background-color: #edeae3;
+$font-color: black;
+$font-family: 'JetBrains mono', monospace;
+$font-weight: 400;
 
 html,
 body {
-  // background-color: #141414;
-  color: black;
+  background-color: $background-color;
+  color: $font-color;
+  font-size: 20px !important;
+  font-family: $font-family !important;
+  font-weight: $font-weight !important;
+  word-break: break-word;
 }
 
 a {
-  color: #004cff;
+  color: $font-color;
+  text-decoration: underline;
+}
+a:hover,
+a:focus,
+a:active {
+  color: $background-color;
+  background-color: $font-color;
 }

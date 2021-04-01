@@ -52,7 +52,7 @@ interface IBulletSubStr {
 
 const experiences: IExperience[] = [
   {
-    company: { name: 'Vicarious AI', url: 'https://www.vicarious.com/' },
+    company: { name: 'Vicarious', url: 'https://www.vicarious.com/' },
     dates: 'September 2020 – Present',
     title: 'Frontend Engineer',
     description: []

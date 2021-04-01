@@ -10,14 +10,15 @@
             <ExternalLink :href="link.url" :text="link.text" />
           </li>
         </ul>
-        <video width="100%" autoplay muted loop>
-          <source :src="project.video" type="video/mp4" />
-        </video>
+
         <ul>
           <li v-for="bullet in project.description" :key="bullet">
             {{ bullet }}
           </li>
         </ul>
+        <video width="100%" autoplay muted loop>
+          <source :src="project.video" type="video/mp4" />
+        </video>
       </div>
     </div>
   </section>
@@ -116,7 +117,7 @@ video {
 @media (min-width: 960px) {
   .grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 </style>

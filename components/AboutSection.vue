@@ -1,8 +1,10 @@
 <template>
   <section id="about">
     <h2>About</h2>
-    <img src="/christian_memije.jpg" alt="Christian Memije" />
-    <p>{{ about }}</p>
+    <div class="wrapper">
+      <img src="/christian_memije.jpg" alt="Christian Memije" />
+      <p>{{ about }}</p>
+    </div>
   </section>
 </template>
 
@@ -19,8 +21,16 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  display: flex;
+  align-items: center;
+}
 img {
   width: 10rem;
   max-width: 100%;
+}
+p {
+  padding-left: 1rem;
+  flex: 1;
 }
 </style>

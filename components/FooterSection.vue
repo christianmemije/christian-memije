@@ -4,19 +4,15 @@
       Built using
       <ExternalLink href="https://nuxtjs.org/" text="Nuxt.js" />,
       <ExternalLink
-        href="https://github.com/matteobruni/tsparticles"
-        text="tsParticles"
-      />,
-      <ExternalLink
-        href="https://fonts.google.com/specimen/IBM+Plex+Mono"
-        text="IBM Plex Mono"
+        href="https://fonts.google.com/specimen/JetBrains+Mono"
+        text="JetBrains Mono"
       />, and
       <ExternalLink
         href="https://devinhunt.github.io/typebase.css/"
         text="typebase.css"
       />. OSS FTW! :D
       <ExternalLink
-        href="https://github.com/christianmemije/christian-memije"
+        href="https://github.com/christianmemije/christianmemije"
         text="View source"
       />.
     </p>

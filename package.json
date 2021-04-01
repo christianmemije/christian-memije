@@ -1,5 +1,5 @@
 {
-  "name": "christian-memije",
+  "name": "christianmemije",
   "version": "1.0.0",
   "description": "Christian Memije",
   "author": "Christian Memije",
@@ -21,10 +21,9 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
-    "fontsource-ibm-plex-mono": "^2.1.4",
-    "normalize.css": "^8.0.1",
-    "nuxt": "^2.0.0",
-    "tsparticles": "^1.16.2"
+    "bootstrap": "^4.5.3",
+    "fontsource-jetbrains-mono": "^4.0.0",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",

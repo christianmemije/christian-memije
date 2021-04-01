@@ -1,7 +1,8 @@
 <template>
   <section>
-    <ProjectsSection class="push" />
+    <IntroSection class="push" />
     <ExperienceSection class="push" />
+    <ProjectsSection class="push" />
     <EducationSection class="push" />
     <ArticlesSection class="push" />
     <TalksSection class="push" />
@@ -16,6 +17,7 @@ import TalksSection from '~/components/TalksSection.vue';
 import AboutSection from '~/components/AboutSection.vue';
 import ExperienceSection from '~/components/ExperienceSection.vue';
 import EducationSection from '~/components/EducationSection.vue';
+import IntroSection from '~/components/IntroSection.vue';
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     TalksSection,
     AboutSection,
     ExperienceSection,
-    EducationSection
+    EducationSection,
+    IntroSection
   }
 };
 </script>
@@ -35,6 +38,6 @@ section {
 }
 
 .push:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 </style>

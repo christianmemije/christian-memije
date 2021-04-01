@@ -1,7 +1,5 @@
 <template>
   <header>
-    <h1><nuxt-link class="title" to="/">Christian Memije</nuxt-link></h1>
-    <p>Frontend Engineer interested in music, AI, and space.</p>
     <nav>
       <ul>
         <li v-for="link in anchorLinks" :key="link.text">
@@ -25,12 +23,16 @@ interface ILink {
 
 const anchorLinks: ILink[] = [
   {
-    text: 'Projects',
-    href: '#projects'
+    text: 'CM',
+    href: '#intro'
   },
   {
     text: 'Experience',
     href: '#experience'
+  },
+  {
+    text: 'Projects',
+    href: '#projects'
   },
   {
     text: 'Education',
@@ -79,10 +81,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.title {
-  color: black;
-  text-decoration: none;
-}
 nav {
   ul {
     padding: 0;
@@ -94,5 +92,13 @@ nav {
   li {
     display: inline-block;
   }
+}
+h1 {
+  padding-right: 1.25rem;
+}
+
+h1,
+nav {
+  display: inline-block;
 }
 </style>
