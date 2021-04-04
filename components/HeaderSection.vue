@@ -84,17 +84,18 @@ export default {
 nav {
   ul {
     padding: 0;
-    margin: 0.5rem 0;
+
+    margin: 1rem 0;
   }
   li:not(:last-child) {
-    padding-right: 1.25rem;
+    padding-right: 1rem;
   }
   li {
     display: inline-block;
   }
 }
 h1 {
-  padding-right: 1.25rem;
+  padding-right: 1rem;
 }
 
 h1,

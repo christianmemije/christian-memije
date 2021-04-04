@@ -26,7 +26,7 @@ export default {
 }
 
 h1 {
-  color: #edeae3;
-  background-color: black;
+  /* color: #edeae3;
+  background-color: black; */
 }
 </style>

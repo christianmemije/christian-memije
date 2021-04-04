@@ -29,8 +29,19 @@ img {
   width: 10rem;
   max-width: 100%;
 }
+
 p {
   padding-left: 1rem;
   flex: 1;
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    display: block;
+  }
+
+  p {
+    padding: 1rem 0;
+  }
 }
 </style>

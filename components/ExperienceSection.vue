@@ -1,6 +1,6 @@
 <template>
   <section id="experience">
-    <h2>Work Experience</h2>
+    <h2>Experience</h2>
     <div
       v-for="experience in experiences"
       :key="experience.company.name"
@@ -150,6 +150,6 @@ export default {
 
 <style scoped lang="scss">
 .experience-item {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 </style>

@@ -10,10 +10,36 @@ html,
 body {
   background-color: $background-color;
   color: $font-color;
-  font-size: 20px !important;
   font-family: $font-family !important;
   font-weight: $font-weight !important;
   word-break: break-word;
+}
+
+@media (min-width: 1440px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1080px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 720px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 360px) {
+  html,
+  body {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -25,4 +51,8 @@ a:focus,
 a:active {
   color: $background-color;
   background-color: $font-color;
+}
+
+ul {
+  padding-left: 1rem;
 }

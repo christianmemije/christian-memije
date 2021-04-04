@@ -1,6 +1,6 @@
 <template>
   <section id="projects">
-    <h2>Personal Projects</h2>
+    <h2>Projects</h2>
 
     <div class="grid">
       <div v-for="project in projects" :key="project.name" class="grid-item">
@@ -97,24 +97,23 @@ export default {
 
 <style scoped>
 ul {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 video {
-  max-width: 100%;
-  width: 25rem;
+  width: 100%;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 5rem;
 }
 
 .grid-item {
   width: 100%;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 720px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

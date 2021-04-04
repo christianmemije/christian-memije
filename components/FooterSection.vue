@@ -35,5 +35,6 @@ export default {
 <style scoped lang="scss">
 footer {
   font-size: smaller;
+  padding: 3rem 0 1rem 0;
 }
 </style>
